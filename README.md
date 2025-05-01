@@ -93,7 +93,7 @@ oJ    // json
 > Note: Since Nmap doesn't scan/display vulnerabilities and tags, that data is not available in nmap's formats. Use `-oS` to view that info.
 
 ### Specifying ports
-Smap scans these [1237 ports](https://gist.githubusercontent.com/s0md3v/3e953e8e15afebc1879a2245e74fc90f/raw/1e20288e9bef43b60f7306b6f7e23044dabd9b8c/shodan_ports.txt) by default. If you want to display results for certain ports, use the `-p` option.
+Smap scans these [~4000 ports](https://api.shodan.io/shodan/ports) by default. If you want to display results for certain ports, use the `-p` option.
 
 ```
 smap -p21-30,80,443 -iL targets.txt
@@ -105,7 +105,6 @@ Since Smap simply fetches existent port data from shodan.io, it is super fast bu
 #### You want
 - vulnerability detection
 - a super fast port scanner
-- results for most common ports (top 1237)
 - no connections to be made to the targets
 
 #### You are okay with
